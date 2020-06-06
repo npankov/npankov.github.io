@@ -1,11 +1,12 @@
 {
+  "homepage": "http://npankov.github.io/",
   "name": "reactcv",
   "version": "1.0.0",
-  "homepage": "https://npankov.github.io/",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^3.0.0",
     "react": "16.12.0",
     "react-cv": "1.1.0",
     "react-dom": "16.12.0",
@@ -19,8 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build --branch master"
   },
   "browserslist": [
     ">0.2%",
