@@ -36,7 +36,7 @@ export const CVData = {
           rightSide: '2018 - 2019'
         },
         {
-          title: 'Master Logiciel des technologies d’information. Quallification : Ingénieur Programmeur',
+          title: 'Master Technologies d’information. Quallification : Ingénieur Programmeur',
           authority: 'BSUIR',
           authorityWebSite: 'https://www.4icu.org/reviews/242.htm',
           rightSide: '2010 - 2014'
