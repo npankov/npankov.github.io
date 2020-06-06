@@ -45,6 +45,29 @@ export const CVData = {
     },
     {
       type: 'experiences-list',
+      title: 'Projets',
+      icon: 'tasks',
+      items: [
+        {
+          title: 'GenDiff utilite',
+          company: 'Voir le projet sur github',
+          description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini',
+          companyWebSite: 'https://github.com/npankov/frontend-project-lvl2',
+          companyMeta: '',
+          descriptionTags: ['ES6', 'CI', 'TDD', 'AST'],
+        },
+        {
+          title: 'Console Games',
+          company: 'Voir le projet sur github',
+          description: 'Cinq jeux de console de logique',
+          companyWebSite: 'https://github.com/npankov/frontend-project-lvl1',
+          companyMeta: '',
+          descriptionTags: ['ES6', 'CI'],
+        },
+      ]
+    },
+    {
+      type: 'experiences-list',
       title: 'Experiences',
       icon: 'archive',
       items: [
@@ -82,29 +105,6 @@ export const CVData = {
       ]
     },
     {
-      type: 'experiences-list',
-      title: 'Experiences',
-      icon: 'tasks',
-      items: [
-        {
-          title: 'GenDiff utilite',
-          company: 'Voir le projet sur github',
-          description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini',
-          companyWebSite: 'https://github.com/npankov/frontend-project-lvl2',
-          companyMeta: '',
-          descriptionTags: ['ES6', 'CI', 'TDD', 'AST'],
-        },
-        {
-          title: 'Console Games',
-          company: 'Voir le projet sur github',
-          description: 'Cinq jeux de console de logique',
-          companyWebSite: 'https://github.com/npankov/frontend-project-lvl1',
-          companyMeta: '',
-          descriptionTags: ['ES6', 'CI'],
-        },
-      ]
-    },
-    {
       type: 'common-list',
       title: 'Languages',
       icon: 'language',
@@ -125,13 +125,13 @@ export const CVData = {
     },
     {
       type: 'tag-list',
-      title: 'Skills Proficiency',
+      title: 'Compétences',
       icon: 'rocket',
       items: ['React', 'Javascript', 'HTML / CSS / Bootstrap', 'SQL', 'TDD', 'CI', 'Agile', 'VS Code / WebStorm', 'Illustrator']
     },
     {
       type: 'tag-list',
-      title: 'Hobbies & Interests',
+      title: 'Loisirs',
       icon: 'cubes',
       items: ['Snowboard', 'MTB']
     }
