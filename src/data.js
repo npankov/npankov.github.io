@@ -68,7 +68,7 @@ export const CVData = {
     },
     {
       type: 'tag-list',
-      title: 'Compétences',
+      title: 'Compétences techniques',
       icon: 'rocket',
       items: ['React', 'Javascript', 'HTML / CSS / Bootstrap', 'SQL', 'TDD', 'CI', 'Agile', 'VS Code / WebStorm', 'Illustrator']
     },
