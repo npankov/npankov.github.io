@@ -67,6 +67,12 @@ export const CVData = {
       ]
     },
     {
+      type: 'tag-list',
+      title: 'Compétences',
+      icon: 'rocket',
+      items: ['React', 'Javascript', 'HTML / CSS / Bootstrap', 'SQL', 'TDD', 'CI', 'Agile', 'VS Code / WebStorm', 'Illustrator']
+    },
+    {
       type: 'experiences-list',
       title: 'Experiences',
       icon: 'archive',
@@ -122,12 +128,6 @@ export const CVData = {
           authorityMeta: 'Courant'
         }
       ]
-    },
-    {
-      type: 'tag-list',
-      title: 'Compétences',
-      icon: 'rocket',
-      items: ['React', 'Javascript', 'HTML / CSS / Bootstrap', 'SQL', 'TDD', 'CI', 'Agile', 'VS Code / WebStorm', 'Illustrator']
     },
     {
       type: 'tag-list',
