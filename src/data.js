@@ -51,7 +51,7 @@ export const CVData = {
         {
           title: 'GenDiff utilite',
           company: 'Voir le projet sur github',
-          description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini',
+          description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini avec l\'option de génération de rapport en format text / pretty / json',
           companyWebSite: 'https://github.com/npankov/frontend-project-lvl2',
           companyMeta: '',
           descriptionTags: ['ES6', 'CI', 'TDD', 'AST'],
