@@ -54,7 +54,7 @@ export const CVData = {
           description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini avec l\'option de génération de rapport en format text / pretty / json',
           companyWebSite: 'https://github.com/npankov/frontend-project-lvl2',
           companyMeta: '',
-          descriptionTags: ['ES6', 'CI', 'TDD', 'AST'],
+          descriptionTags: ['ES6', 'CI', 'NodeJS', 'TDD', 'AST'],
         },
         {
           title: 'Console Games',
@@ -62,7 +62,7 @@ export const CVData = {
           description: 'Cinq jeux de console de logique',
           companyWebSite: 'https://github.com/npankov/frontend-project-lvl1',
           companyMeta: '',
-          descriptionTags: ['ES6', 'CI'],
+          descriptionTags: ['ES6', 'CI', 'NodeJS'],
         },
       ]
     },
