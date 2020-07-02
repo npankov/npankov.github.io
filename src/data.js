@@ -54,7 +54,7 @@ export const CVData = {
           description: 'Application pour consulter de statistique de cas de Covid-19',
           companyWebSite: 'https://npankov.github.io/covid19-statistic-project/',
           companyMeta: '',
-          descriptionTags: ['ES6', 'React', 'Hooks', 'Material-UI', 'Chart.js', 'API', 'axios'],
+          descriptionTags: ['ES6', 'React, Hooks', 'Material-UI', 'Chart.js', 'API', 'axios'],
         },
         {
           title: 'GenDiff utilite',
