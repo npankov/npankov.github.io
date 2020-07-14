@@ -120,7 +120,7 @@ export const CVData = {
     },
     {
       type: 'common-list',
-      title: 'Languages',
+      title: 'Langues',
       icon: 'language',
       items: [
         {
