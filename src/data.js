@@ -19,31 +19,6 @@ export const CVData = {
       icon: 'usertie'
     },
     {
-      type: 'common-list',
-      title: 'Formations',
-      icon: 'graduation',
-      items: [
-        {
-          title: 'Développeur Front-end JavaScript',
-          authority: 'Hexlet.io',
-          authorityWebSite: 'https://hexlet.io',
-          rightSide: '2019 - аujourd\'hui'
-        },
-        {
-          title: 'Centre international d’études françaises',
-          authority: 'Université Lyon 2',
-          authorityWebSite: 'https://cief.univ-lyon2.fr/',
-          rightSide: '2018 - 2019'
-        },
-        {
-          title: 'Master Technologies d’information. Quallification : Ingénieur Programmeur',
-          authority: 'BSUIR',
-          authorityWebSite: 'https://www.4icu.org/reviews/242.htm',
-          rightSide: '2010 - 2014'
-        }
-      ]
-    },
-    {
       type: 'experiences-list',
       title: 'Projets',
       icon: 'tasks',
@@ -72,6 +47,31 @@ export const CVData = {
           companyMeta: '',
           descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel'],
         },
+      ]
+    },
+    {
+      type: 'common-list',
+      title: 'Formations',
+      icon: 'graduation',
+      items: [
+        {
+          title: 'Développeur Front-end JavaScript',
+          authority: 'Hexlet.io',
+          authorityWebSite: 'https://hexlet.io',
+          rightSide: '2019 - аujourd\'hui'
+        },
+        {
+          title: 'Centre international d’études françaises',
+          authority: 'Université Lyon 2',
+          authorityWebSite: 'https://cief.univ-lyon2.fr/',
+          rightSide: '2018 - 2019'
+        },
+        {
+          title: 'Master Technologies d’information. Quallification : Ingénieur Programmeur',
+          authority: 'BSUIR',
+          authorityWebSite: 'https://www.4icu.org/reviews/242.htm',
+          rightSide: '2010 - 2014'
+        }
       ]
     },
     {
