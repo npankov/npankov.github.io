@@ -29,7 +29,7 @@ export const CVData = {
           description: 'Application pour consulter de statistique de cas de Covid-19',
           companyWebSite: 'https://npankov.github.io/covid19-statistic-project/',
           companyMeta: '',
-          descriptionTags: ['ES6', 'React, Hooks', 'Material-UI', 'Chart.js', 'API', 'axios'],
+          descriptionTags: ['ES6', 'React, Hooks', 'Material-UI', 'Chart.js', 'API', 'axios', 'ESLint'],
         },
         {
           title: 'GenDiff utilite',
@@ -37,7 +37,7 @@ export const CVData = {
           description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini avec l\'option de génération de rapport en format text / pretty / json',
           companyWebSite: 'https://github.com/npankov/frontend-project-lvl2',
           companyMeta: '',
-          descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel', 'TDD', 'AST'],
+          descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel', 'TDD', 'AST', 'ESLint'],
         },
         {
           title: 'Console Games',
@@ -45,7 +45,7 @@ export const CVData = {
           description: 'Cinq jeux de console de logique',
           companyWebSite: 'https://github.com/npankov/frontend-project-lvl1',
           companyMeta: '',
-          descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel'],
+          descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel', 'ESLint'],
         },
       ]
     },
