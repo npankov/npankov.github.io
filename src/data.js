@@ -1,7 +1,7 @@
 export const CVData = {
   personalData: {
     name: 'Nikolai Pankov',
-    title: 'Junior Web-développeur',
+    title: 'Web-développeur junior',
     image: 'https://avatars0.githubusercontent.com/u/15931359?s=460&u=8190b0ceaa3068792db92bfac39ec22a54675972&v=4',
     contacts: [
       { type: 'email', value: 'pankov@outlook.fr' },
@@ -15,7 +15,7 @@ export const CVData = {
     {
       type: 'text',
       title: 'Profil',
-      content: 'Profil international, 29 ans, installé à Lyon. De nature motivé, organisé et déterminé. Junior en JavaScript, en cours de formation React. Diplômé en 2014 d\'un Master Informatique : Programmation & Développement, avec la qualification professionnelle d’ingénieur programmeur à Minsk, Biélorussie (attestation de comparabilité par Enic-Naric). Durant la formation sur hexlet.io, j’ai réalisé les projets que vous pouvez consulter sur Github.',
+      content: 'Profil international, 30 ans, installé à Lyon. De nature motivé, organisé et déterminé. Junior en JavaScript, j\'approfondis mes connaissances en React avec la formation Hexlet.io. Diplômé en 2014 d\'un Master Informatique : Programmation & Développement, avec la qualification professionnelle d’ingénieur programmeur à Minsk, Biélorussie (attestation de comparabilité par Enic-Naric). Durant la formation sur hexlet.io, j’ai réalisé les projets que vous pouvez consulter sur Github.',
       icon: 'usertie'
     },
     {
