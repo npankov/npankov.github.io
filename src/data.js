@@ -15,7 +15,7 @@ export const CVData = {
     {
       type: 'text',
       title: 'Profil',
-      content: 'Profil international, 30 ans, installé à Lyon. De nature motivé, organisé et déterminé. Junior en JavaScript, j\'approfondis mes connaissances en React avec la formation Hexlet.io. Diplômé en 2014 d\'un Master Informatique : Programmation & Développement, avec la qualification professionnelle d’ingénieur programmeur à Minsk, Biélorussie (attestation de comparabilité par Enic-Naric). Durant la formation sur hexlet.io, j’ai réalisé les projets que vous pouvez consulter sur Github.',
+      content: 'Profil international, 30 ans, installé à Lyon. De nature motivé, organisé et déterminé. Junior en JavaScript, j\'approfondis mes connaissances en React. Diplômé en 2014 d\'un Master Informatique : Programmation & Développement, avec la qualification professionnelle d’ingénieur programmeur à Minsk, Biélorussie (attestation de comparabilité par Enic-Naric). Durant la formation sur hexlet.io, j’ai réalisé les projets que vous pouvez consulter sur Github.',
       icon: 'usertie'
     },
     {
