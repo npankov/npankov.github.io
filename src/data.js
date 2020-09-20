@@ -27,7 +27,7 @@ export const CVData = {
           title: 'Statistique de Covid-19',
           company: 'Voir le projet',
           description: 'Application pour consulter de statistique de cas de Covid-19',
-          companyWebSite: 'https://npankov.github.io/covid19-statistic-project/',
+          companyWebSite: 'https://npankov.github.io/covid19-statistics-project/',
           companyMeta: '',
           descriptionTags: ['ES6', 'React, Hooks', 'Material-UI', 'Chart.js', 'API', 'axios', 'ESLint'],
         },
