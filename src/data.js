@@ -1,7 +1,7 @@
 export const CVData = {
   personalData: {
     name: 'Nikolai Pankov',
-    title: 'Web-développeur junior',
+    title: 'Développeur web junior',
     image: 'https://avatars0.githubusercontent.com/u/15931359?s=460&u=8190b0ceaa3068792db92bfac39ec22a54675972&v=4',
     contacts: [
       { type: 'email', value: 'pankov@outlook.fr' },
