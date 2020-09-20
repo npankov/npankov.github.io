@@ -133,7 +133,7 @@ export const CVData = {
         },
         {
           authority: 'Russe',
-          authorityMeta: 'Courant'
+          authorityMeta: 'Bilingue (Natif)'
         }
       ]
     },
@@ -141,7 +141,7 @@ export const CVData = {
       type: 'tag-list',
       title: 'Loisirs',
       icon: 'cubes',
-      items: ['Snowboard', 'MTB']
+      items: ['Snowboard', 'MTB', 'CS', 'PUBG']
     }
   ]
 }
