@@ -159,7 +159,7 @@ export default class App extends Component {
             items: ['Snowboard', 'MTB', 'CS', 'PUBG']
           }
         ]}
-        branding={false} // or false to hide it.
+        branding={false}
       />
     )
   }
