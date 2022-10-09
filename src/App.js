@@ -7,7 +7,7 @@ export default class App extends Component {
       <CV
         personalData={{
           name: 'Nikolai Pankov',
-          title: 'Développeur web junior',
+          title: 'Développeur front-end',
           image: 'https://avatars0.githubusercontent.com/u/15931359?s=460&u=8190b0ceaa3068792db92bfac39ec22a54675972&v=4',
           contacts: [
             { type: 'email', value: 'pankov@outlook.fr' },
@@ -21,7 +21,7 @@ export default class App extends Component {
           {
             type: 'text',
             title: 'Profil',
-            content: 'Profil international, 30 ans. ' +
+            content: 'Profil international. ' +
               '6 ans d\'expérience dans le domaine d\'informatique. ' +
               'De nature motivé, organisé et déterminé. Curieux, en recherche d\'approfondir ' +
               'mes connaissances dans le développement web. Vous pouvez consulter mes projets sur la page ' +
@@ -68,10 +68,16 @@ export default class App extends Component {
             icon: 'graduation',
             items: [
               {
+                title: 'Développeur web et web - mobile',
+                authority: 'Human Booster',
+                authorityWebSite: 'https://humanbooster.com/',
+                rightSide: '2021 - 2022'
+              },
+              {
                 title: 'Développeur Front-end JavaScript',
                 authority: 'Hexlet.io',
                 authorityWebSite: 'https://hexlet.io',
-                rightSide: '2019 - аujourd\'hui'
+                rightSide: '2019 - 2020'
               },
               {
                 title: 'Centre international d’études françaises',
@@ -91,7 +97,7 @@ export default class App extends Component {
             type: 'tag-list',
             title: 'Compétences techniques',
             icon: 'rocket',
-            items: ['Javascript', 'React', 'Redux', 'NodeJS', 'jQuery', 'HTML / CSS / Bootstrap / Material - UI', 'SQL', 'TDD', 'CI', 'Agile', 'VS Code / WebStorm', 'Illustrator', 'Mac / Linux / Windows']
+            items: ['Javascript', 'TS', 'React', 'Redux', 'NodeJS', 'HTML / CSS / Bootstrap / Material - UI', 'SQL', 'TDD', 'CI', 'Agile']
           },
           {
             type: 'experiences-list',
@@ -99,12 +105,23 @@ export default class App extends Component {
             icon: 'archive',
             items: [
               {
+                title: 'Développeur front-end',
+                company: 'LumApps',
+                description: 'Migration les pages de l’application LumApps d’AngularJS vers React (TS, React, Redux, Jest, ESlint)\n' +
+                    'Développement de nouvelles fiture “Jorurneys”, pour l’onboarding (TS, React, Redux, Jest, ESlint, Figma)\n' +
+                    'Création des tests unitaires, stories (RTL, storybook)\n' +
+                    'Review de PR',
+                companyWebSite: 'https://www.lumapps.com/',
+                companyMeta: '',
+                datesBetween: '2022',
+              },
+              {
                 title: 'D\'autopartage sur Getaround',
                 company: 'Entrepreneur',
                 description: 'Mise en location de ma flotte de véhicules sur le service Getaround',
                 companyWebSite: 'https://fr.getaround.com/users/1301762',
                 companyMeta: '',
-                datesBetween: '07.2017 - аujourd\'hui',
+                datesBetween: '2017 - аujourd\'hui',
               },
               {
                 title: 'Ingénieur technicien',
@@ -112,7 +129,7 @@ export default class App extends Component {
                 description: 'Configuration des panneaux de contrôle et vérification des premiers tests fonctionnels',
                 companyWebSite: 'https://www.voda2000.by/',
                 companyMeta: '',
-                datesBetween: '04.2013 - 05.2017',
+                datesBetween: '2013 - 2017',
               },
               {
                 title: 'Stagière QA',
@@ -120,7 +137,7 @@ export default class App extends Component {
                 description: 'Tests des applications Web',
                 companyWebSite: 'https://www.a1qa.by/',
                 companyMeta: '',
-                datesBetween: '10.2016 - 12.2016',
+                datesBetween: '2016 - 2016',
                 descriptionTags: ['Test fonctionnel', 'Test de compatibilité', 'Test de régression', 'Test utilisateur']
               },
               {
