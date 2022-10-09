@@ -21,14 +21,14 @@ export default class App extends Component {
           {
             type: 'text',
             title: 'Profil',
-            content: 'Profil international. ' +
-              '6 ans d\'expérience dans le domaine d\'informatique. ' +
-              'De nature motivé, organisé et déterminé. Curieux, en recherche d\'approfondir ' +
-              'mes connaissances dans le développement web. Vous pouvez consulter mes projets sur la page ' +
+            content: 'Développeur front-end, profil international. ' +
+              'De nature motivé, organisé et déterminé. Curieux, ' +
+              'j\'approfondie quotidiennement mes connaissances en développement web. ' +
+              'Vous pouvez consulter mes projets sur la page' +
               'Github soit en cliquant sur les liens dans mes projets. ' +
               'Diplômé en 2014 d\'un Master Informatique : Programmation & Développement, ' +
               'avec la qualification professionnelle d’ingénieur programmeur à Minsk, Biélorussie ' +
-              '(attestation de comparabilité par Enic-Naric équivalent BAC +5).',
+              '(attestation de comparabilité par Enic-Naric équivalent BAC +5). J’ai renforcé mes acquis en développement web en 2021 - 2022 chez Human Booster, Lyon, France.',
             icon: 'usertie'
           },
           {
@@ -45,10 +45,11 @@ export default class App extends Component {
               {
                 title: 'Développeur front-end',
                 company: 'LumApps',
-                description: '• Migration les pages de l’application LumApps d’AngularJS vers React\n' + '\n' +
-                    '• Développement de nouvelles fiture “Jorurneys”, pour l’onboarding \n' + '\n' +
-                    '• Création des tests unitaires, stories (RTL, storybook)\n' + '\n' +
-                    '• Review de PR',
+                description:
+                    'Migration les pages de l’application LumApps d’AngularJS vers React. ' +
+                    'Développement de nouvelle fiture “Jorurneys”, pour l’onboarding. ' +
+                    'Création des tests unitaires, stories. ' +
+                    'Review de PR.',
                 companyWebSite: 'https://www.lumapps.com/',
                 companyMeta: '',
                 datesBetween: '2022',
@@ -57,7 +58,7 @@ export default class App extends Component {
               {
                 title: 'D\'autopartage sur Getaround',
                 company: 'Entrepreneur',
-                description: '• Mise en location de ma flotte de véhicules sur le service Getaround',
+                description: 'Mise en location de ma flotte de véhicules sur le service Getaround',
                 companyWebSite: 'https://fr.getaround.com/users/1301762',
                 companyMeta: '',
                 datesBetween: '2017 - 2021',
@@ -65,8 +66,8 @@ export default class App extends Component {
               {
                 title: 'Technicien informatique',
                 company: 'Voda2000',
-                description: '•Configuration des panneaux de contrôle et vérification\n' + '\n' +
-                    '• Premiers tests fonctionnels',
+                description: 'Configuration des panneaux de contrôle et vérification\n' +
+                             'Premiers tests fonctionnels',
                 companyWebSite: 'https://www.voda2000.by/',
                 companyMeta: '',
                 datesBetween: '2013 - 2017',
