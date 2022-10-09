@@ -32,33 +32,44 @@ export default class App extends Component {
             icon: 'usertie'
           },
           {
+            type: 'tag-list',
+            title: 'Compétences techniques',
+            icon: 'rocket',
+            items: ['Javascript', 'TypeScript', 'React', 'Redux', 'NodeJS', 'HTML / CSS / Bootstrap', 'SQL', 'TDD', 'Unit tests', 'CI', 'Agile']
+          },
+          {
             type: 'experiences-list',
-            title: 'Projets',
-            icon: 'tasks',
+            title: 'Experiences',
+            icon: 'archive',
             items: [
               {
-                title: 'Statistique de Covid-19',
-                company: 'Voir le projet',
-                description: 'Projet front-end pour consulter les cas de covid dans le monde',
-                companyWebSite: 'https://npankov.github.io/covid19-statistic-project/',
+                title: 'Développeur front-end',
+                company: 'LumApps',
+                description: '• Migration les pages de l’application LumApps d’AngularJS vers React\n' + '\n' +
+                    '• Développement de nouvelles fiture “Jorurneys”, pour l’onboarding \n' + '\n' +
+                    '• Création des tests unitaires, stories (RTL, storybook)\n' + '\n' +
+                    '• Review de PR',
+                companyWebSite: 'https://www.lumapps.com/',
                 companyMeta: '',
-                descriptionTags: ['ES6', 'React, Hooks', 'Material-UI', 'Chart.js', 'API', 'axios', 'ESLint'],
+                datesBetween: '2022',
+                descriptionTags: ['TS', 'React', 'Redux', 'Jest', 'RTL', 'ESlint', 'Figma', 'Storybook' ],
               },
               {
-                title: 'GenDiff utilite',
-                company: 'Voir le projet sur github',
-                description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini avec l\'option de génération de l’arbre de différences et construction du rapport en format text / pretty / json',
-                companyWebSite: 'https://github.com/npankov/frontend-project-lvl2',
+                title: 'D\'autopartage sur Getaround',
+                company: 'Entrepreneur',
+                description: '• Mise en location de ma flotte de véhicules sur le service Getaround',
+                companyWebSite: 'https://fr.getaround.com/users/1301762',
                 companyMeta: '',
-                descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel', 'TDD', 'AST', 'ESLint'],
+                datesBetween: '2017 - 2021',
               },
               {
-                title: 'Console Games',
-                company: 'Voir le projet sur github',
-                description: 'Cinq jeux de console de logique',
-                companyWebSite: 'https://github.com/npankov/frontend-project-lvl1',
+                title: 'Technicien informatique',
+                company: 'Voda2000',
+                description: '•Configuration des panneaux de contrôle et vérification\n' + '\n' +
+                    '• Premiers tests fonctionnels',
+                companyWebSite: 'https://www.voda2000.by/',
                 companyMeta: '',
-                descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel', 'ESLint'],
+                datesBetween: '2013 - 2017',
               },
             ]
           },
@@ -94,60 +105,34 @@ export default class App extends Component {
             ]
           },
           {
-            type: 'tag-list',
-            title: 'Compétences techniques',
-            icon: 'rocket',
-            items: ['Javascript', 'TS', 'React', 'Redux', 'NodeJS', 'HTML / CSS / Bootstrap / Material - UI', 'SQL', 'TDD', 'CI', 'Agile']
-          },
-          {
             type: 'experiences-list',
-            title: 'Experiences',
-            icon: 'archive',
+            title: 'Projets personnels',
+            icon: 'tasks',
             items: [
               {
-                title: 'Développeur front-end',
-                company: 'LumApps',
-                description: 'Migration les pages de l’application LumApps d’AngularJS vers React (TS, React, Redux, Jest, ESlint)\n' +
-                    'Développement de nouvelles fiture “Jorurneys”, pour l’onboarding (TS, React, Redux, Jest, ESlint, Figma)\n' +
-                    'Création des tests unitaires, stories (RTL, storybook)\n' +
-                    'Review de PR',
-                companyWebSite: 'https://www.lumapps.com/',
+                title: 'Statistique de Covid-19',
+                company: 'Voir le projet',
+                description: 'Projet front-end pour consulter les cas de covid dans le monde',
+                companyWebSite: 'https://npankov.github.io/covid19-statistic-project/',
                 companyMeta: '',
-                datesBetween: '2022',
+                descriptionTags: ['ES6', 'React, Hooks', 'Material-UI', 'Chart.js', 'API', 'axios', 'ESLint'],
               },
               {
-                title: 'D\'autopartage sur Getaround',
-                company: 'Entrepreneur',
-                description: 'Mise en location de ma flotte de véhicules sur le service Getaround',
-                companyWebSite: 'https://fr.getaround.com/users/1301762',
+                title: 'GenDiff utilite',
+                company: 'Voir le projet sur github',
+                description: 'Cli-utilite pour comparer les fichiers .json, .yml, .ini avec l\'option de génération de l’arbre de différences et construction du rapport en format text / pretty / json',
+                companyWebSite: 'https://github.com/npankov/frontend-project-lvl2',
                 companyMeta: '',
-                datesBetween: '2017 - аujourd\'hui',
+                descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel', 'TDD', 'AST', 'ESLint'],
               },
               {
-                title: 'Ingénieur technicien',
-                company: 'Voda2000',
-                description: 'Configuration des panneaux de contrôle et vérification des premiers tests fonctionnels',
-                companyWebSite: 'https://www.voda2000.by/',
+                title: 'Console Games',
+                company: 'Voir le projet sur github',
+                description: 'Cinq jeux de console de logique',
+                companyWebSite: 'https://github.com/npankov/frontend-project-lvl1',
                 companyMeta: '',
-                datesBetween: '2013 - 2017',
+                descriptionTags: ['ES6', 'CI', 'NodeJS', 'Babel', 'ESLint'],
               },
-              {
-                title: 'Stagière QA',
-                company: 'A1QA',
-                description: 'Tests des applications Web',
-                companyWebSite: 'https://www.a1qa.by/',
-                companyMeta: '',
-                datesBetween: '2016 - 2016',
-                descriptionTags: ['Test fonctionnel', 'Test de compatibilité', 'Test de régression', 'Test utilisateur']
-              },
-              {
-                title: 'Technicien informatique, Responsable du site logistique',
-                company: 'Zooterra',
-                description: 'Organisation de travail technique des magasins et du site logistique',
-                companyWebSite: 'http://kikagroup.lt/en/',
-                companyMeta: '',
-                datesBetween: '2010 - 2012'
-              }
             ]
           },
           {
