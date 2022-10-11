@@ -47,7 +47,7 @@ export default class App extends Component {
                 company: 'LumApps',
                 description:
                     'Migration les pages de l’application LumApps d’AngularJS vers React. ' +
-                    'Développement de nouvelle fiture “Jorurneys”, pour l’onboarding. ' +
+                    'Développement de nouvelle features “Journeys”, pour l’onboarding. ' +
                     'Création des tests unitaires, stories. ' +
                     'Review de PR.',
                 companyWebSite: 'https://www.lumapps.com/',
