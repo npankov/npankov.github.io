@@ -169,10 +169,15 @@ body {
 }
 
 .link-arrow {
-  font-size: 0.85em;
-  font-style: normal;
+  width: 0.45em;
+  height: 0.45em;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  transform: rotate(45deg);
   display: inline-block;
   transition: transform 0.3s ease;
+  position: relative;
+  top: 0.05em;
 }
 
 .link:hover {

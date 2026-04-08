@@ -65,10 +65,10 @@ const App = () => {
           <h3 className="section-title">Contact</h3>
           <nav className="links">
             <a href="https://linkedin.com/in/pankof/" className="link" target="_blank" rel="noopener noreferrer">
-              <span className="link-arrow">↗</span> LinkedIn
+              <span className="link-arrow" /> LinkedIn
             </a>
             <a href="https://github.com/npankov" className="link" target="_blank" rel="noopener noreferrer">
-              <span className="link-arrow">↗</span> GitHub
+              <span className="link-arrow" /> GitHub
             </a>
           </nav>
         </section>
