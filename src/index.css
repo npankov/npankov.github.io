@@ -1,5 +1,247 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+
+:root {
+  --bg-color: #030303;
+  --text-primary: #3d3d3d; /* Еле заметный темный текст */
+  --text-secondary: #2c2c2c;
+  --text-tertiary: #1f1f1f;
+}
+
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Прямой, толстый и геометричный */
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start; /* Прижали к левому краю */
+  align-items: center;
+  z-index: 1;
+  padding: 2rem 10vw; /* Отступ слева 10% от экрана */
+}
+
+/* Mouse glow effect - СВЕТИТ ПОВЕРХ ТЕКСТА ОЖИВЛЯЯ ЕГО */
+.glow-effect {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50; /* Поверх всего */
+  mix-blend-mode: color-dodge; /* Магия осветления только для текста! */
+  background: radial-gradient(
+    600px at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
+    rgba(255, 255, 255, 0.6), /* Увеличена яркость фонарика */
+    transparent 70%
+  );
+  transition: opacity 0.3s ease;
+}
+
+.content {
+  z-index: 10;
+  text-align: left; /* Текст по левому краю */
+  animation: fadeIn 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+  transform: translateX(-20px); /* Появление слева направо */
+  max-width: 800px;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.name {
+  font-size: 5rem; /* Огромный */
+  font-weight: 900; /* Максимально толстый */
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
+.meta {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-tertiary);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.separator {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+.about {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  margin-bottom: 4rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.about p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-section {
+  margin-bottom: 3rem;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-tertiary);
+  margin-bottom: 1rem;
+}
+
+.info-section p {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-start; /* Выравнивание ссылок влево */
+}
+
+.link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+}
+
+.link:hover {
+  color: #666; /* Небольшое усиление при наведении */
+}
+
+/* Линия при наведении */
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px; /* Толстая линия */
+  bottom: 0;
+  left: 0; /* Начинается слева */
+  background-color: var(--text-primary);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 800px) {
+  .app-container {
+    padding: 3rem 6vw;
+  }
+  
+  .name {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+  .title {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .separator {
+    display: none;
+  }
+  .header {
+    margin-bottom: 3.5rem;
+  }
+  .about {
+    margin-bottom: 3.5rem;
+    font-size: 1rem;
+  }
+  .about p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .break-mobile {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .info-section {
+    margin-bottom: 2.5rem;
+  }
+  .section-title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .info-section p {
+    font-size: 1.2rem;
+  }
+  .links {
+    gap: 2rem;
+  }
+  .link {
+    font-size: 1.2rem;
+  }
 }
