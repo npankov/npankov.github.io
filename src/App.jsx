@@ -45,17 +45,22 @@ const App = () => {
       }
     };
 
-    const handleFirstTouch = () => {
+    const handleFirstInteraction = () => {
       requestOrientationPermission();
+      window.removeEventListener('click', handleFirstInteraction);
+      window.removeEventListener('touchend', handleFirstInteraction);
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('touchmove', handleTouchMove, { passive: true });
-    window.addEventListener('touchstart', handleFirstTouch, { passive: true, once: true });
+    window.addEventListener('click', handleFirstInteraction, { once: true });
+    window.addEventListener('touchend', handleFirstInteraction, { once: true });
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('touchmove', handleTouchMove);
+      window.removeEventListener('click', handleFirstInteraction);
+      window.removeEventListener('touchend', handleFirstInteraction);
       window.removeEventListener('deviceorientation', handleDeviceOrientation);
     };
   }, []);
