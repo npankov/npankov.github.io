@@ -1,4 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('/fonts/montserrat-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-display: block;
+  src: url('/fonts/montserrat-800.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url('/fonts/montserrat-900.woff2') format('woff2');
+}
 
 :root {
   --bg-color: #030303;
