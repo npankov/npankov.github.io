@@ -1,13 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap');
 
 :root {
   --bg-color: #030303;
-  --text-hero: #4a4a4a;
-  --text-primary: #3a3a3a;
+  --text-primary: #3d3d3d; /* Еле заметный темный текст */
   --text-secondary: #2c2c2c;
   --text-tertiary: #1f1f1f;
-  --text-accent: #444444;
-  --divider-color: #1a1a1a;
 }
 
 * {
@@ -17,11 +14,11 @@
 }
 
 body {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Прямой, толстый и геометричный */
   background-color: var(--bg-color);
   color: var(--text-primary);
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31,91 +28,79 @@ body {
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  justify-content: flex-start; /* Прижали к левому краю */
   align-items: center;
   z-index: 1;
-  padding: 2rem 10vw;
+  padding: 2rem 10vw; /* Отступ слева 10% от экрана */
 }
 
-/* Фонарик (desktop) */
+/* Mouse glow effect - СВЕТИТ ПОВЕРХ ТЕКСТА ОЖИВЛЯЯ ЕГО */
 .glow-effect {
   pointer-events: none;
   position: fixed;
-  inset: 0;
-  z-index: 50;
-  mix-blend-mode: color-dodge;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50; /* Поверх всего */
+  mix-blend-mode: color-dodge; /* Магия осветления только для текста! */
   background: radial-gradient(
-    600px at var(--mouse-x, -200px) var(--mouse-y, -200px),
-    rgba(255, 255, 255, 0.6),
+    600px at var(--mouse-x, 50vw) var(--mouse-y, 50vh),
+    rgba(255, 255, 255, 0.6), /* Увеличена яркость фонарика */
     transparent 70%
   );
+  transition: opacity 0.3s ease;
 }
 
-/* Контент */
 .content {
   z-index: 10;
-  text-align: left;
+  text-align: left; /* Текст по левому краю */
+  animation: fadeIn 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+  transform: translateX(-20px); /* Появление слева направо */
   max-width: 800px;
   width: 100%;
-  isolation: isolate;
 }
-
-/* Staggered fade-in */
-.fade-in {
-  opacity: 0;
-  transform: translateY(14px) translateZ(0);
-  animation: fadeIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-}
-
-.content > :nth-child(1) { animation-delay: 0s; }
-.content > :nth-child(2) { animation-delay: 0.1s; }
-.content > :nth-child(3) { animation-delay: 0.2s; }
-.content > :nth-child(4) { animation-delay: 0.3s; }
-.content > :nth-child(5) { animation-delay: 0.35s; }
-.content > :nth-child(6) { animation-delay: 0.45s; }
-.content > :nth-child(7) { animation-delay: 0.5s; }
 
 @keyframes fadeIn {
   to {
     opacity: 1;
-    transform: translateY(0) translateZ(0);
+    transform: translateX(0);
   }
 }
 
-.divider {
-  width: 40px;
-  height: 1px;
-  background-color: var(--divider-color);
-  margin: 2.5rem 0;
+.header {
+  margin-bottom: 5rem;
 }
 
-/* Типография */
 .name {
-  font-size: clamp(3.2rem, 8vw, 5.5rem);
-  font-weight: 700;
+  font-size: 5rem; /* Огромный */
+  font-weight: 900; /* Максимально толстый */
   text-transform: uppercase;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.05em;
   line-height: 0.9;
-  margin-bottom: 1.5rem;
-  color: var(--text-hero);
-}
-
-.title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   margin-bottom: 1.5rem;
   color: var(--text-primary);
 }
 
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+
 .meta {
   font-size: 1.1rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--text-tertiary);
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-  color: var(--text-secondary);
+  text-transform: uppercase;
 }
 
 .separator {
@@ -123,79 +108,78 @@ body {
   opacity: 0.5;
 }
 
+.about {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  margin-bottom: 4rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
 .about p {
-  font-size: 1.15rem;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.6;
-  letter-spacing: 0.01em;
-  color: var(--text-accent);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-section {
+  margin-bottom: 3rem;
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
 }
 
 .section-title {
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  margin-bottom: 1rem;
   color: var(--text-tertiary);
+  margin-bottom: 1rem;
 }
 
 .info-section p {
   font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 800;
   color: var(--text-primary);
+  text-transform: uppercase;
 }
 
-/* Ссылки */
 .links {
   display: flex;
   gap: 3rem;
+  justify-content: flex-start; /* Выравнивание ссылок влево */
 }
 
 .link {
+  color: var(--text-primary);
   text-decoration: none;
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding-bottom: 4px;
-  color: var(--text-primary);
   transition: color 0.3s ease;
-}
-
-.link-arrow {
-  width: 0.45em;
-  height: 0.45em;
-  border-right: 2px solid currentColor;
-  border-top: 2px solid currentColor;
-  transform: rotate(45deg);
-  display: inline-block;
-  transition: transform 0.3s ease;
-  position: relative;
-  top: 0.05em;
+  padding-bottom: 4px;
 }
 
 .link:hover {
-  color: #666;
+  color: #666; /* Небольшое усиление при наведении */
 }
 
-.link:hover .link-arrow {
-  transform: translate(2px, -2px);
-}
-
+/* Линия при наведении */
 .link::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 1px;
+  height: 3px; /* Толстая линия */
   bottom: 0;
-  left: 0;
-  background-color: var(--text-secondary);
+  left: 0; /* Начинается слева */
+  background-color: var(--text-primary);
   transition: width 0.3s ease;
 }
 
@@ -203,148 +187,61 @@ body {
   width: 100%;
 }
 
-/* Touch ripple */
-.touch-ripple {
-  position: fixed;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.45), transparent 70%);
-  mix-blend-mode: color-dodge;
-  transform: translate(-50%, -50%) scale(0.3);
-  animation: rippleExpand 1s ease-out forwards;
-  pointer-events: none;
-  z-index: 50;
-}
-
-@keyframes rippleExpand {
-  0% {
-    transform: translate(-50%, -50%) scale(0.3);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1.5);
-    opacity: 0;
-  }
-}
-
-/* ===== Mobile ===== */
+/* Mobile responsive */
 @media (max-width: 800px) {
   .app-container {
-    align-items: flex-start;
-    padding: 8vh 7vw 2.5rem;
+    padding: 3rem 6vw;
   }
-
-  .glow-effect {
-    background: none;
-  }
-
-  .glow-effect::before {
-    content: '';
-    position: fixed;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.45), transparent 70%);
-    animation: ambientDrift 10s ease-in-out infinite;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    will-change: transform;
-  }
-
+  
   .name {
-    font-size: clamp(2.4rem, 10vw, 3.2rem);
+    font-size: 3rem;
     line-height: 1;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
   }
-
   .title {
     font-size: 1.2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
   }
-
   .meta {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .separator {
+    display: none;
+  }
+  .header {
+    margin-bottom: 3.5rem;
+  }
+  .about {
+    margin-bottom: 3.5rem;
+    font-size: 1rem;
+  }
+  .about p {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
-    font-size: 0.85rem;
   }
-
-  .separator { display: none; }
-
-  .divider {
-    width: 30px;
-    margin: 1.8rem 0;
-  }
-
-  .about p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .section-title {
-    font-size: 0.75rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.15em;
-  }
-
-  .info-section p { font-size: 1.15rem; }
-  .links { gap: 2rem; }
-
-  .link {
-    font-size: 1.15rem;
-    padding: 0.3rem 0;
-  }
-
-  .touch-ripple {
-    width: 250px;
-    height: 250px;
-  }
-}
-
-/* Мелкие экраны */
-@media (max-width: 380px) {
-  .app-container {
-    padding: 3vh 5vw 1.2rem;
-  }
-
-  .name {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .title {
-    font-size: 0.95rem;
-    margin-bottom: 0.6rem;
-  }
-
-  .meta {
-    font-size: 0.7rem;
-    gap: 0.25rem;
-  }
-
-  .about p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-
-  .divider { margin: 0.8rem 0; }
-
-  .section-title {
-    font-size: 0.65rem;
+  .break-mobile {
+    display: block;
     margin-bottom: 0.3rem;
   }
-
-  .info-section p { font-size: 0.95rem; }
-  .links { gap: 1.5rem; }
-  .link { font-size: 0.95rem; }
-}
-
-@keyframes ambientDrift {
-  0%, 100% { transform: translate(5vw, 10vh); }
-  25% { transform: translate(35vw, 5vh); }
-  50% { transform: translate(25vw, 45vh); }
-  75% { transform: translate(0vw, 30vh); }
+  .info-section {
+    margin-bottom: 2.5rem;
+  }
+  .section-title {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  .info-section p {
+    font-size: 1.2rem;
+  }
+  .links {
+    gap: 2rem;
+  }
+  .link {
+    font-size: 1.2rem;
+  }
 }
